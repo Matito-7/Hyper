@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@600&display=swap');
+:root{
+    --black: #1a1a1d;
+    --cinza: #4e4e50;
+    --vermelho-escuro: #6f2232;
+    --vermelho-vinho: #950740;
+    --vermelho-neon: #c3073f;
+    --algumas-Letras: rgb(211, 201, 201);
+}
+
+.banner-Hogwarts{
+    height: 100vh;
+    background-image: url(../../imagens/HogwartsLegacy/Sanctuary_desktop_logo.jpg);
+    background-position: center;
+    background-size: cover;
+}

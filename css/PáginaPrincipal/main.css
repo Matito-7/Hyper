@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@600&display=swap');
+:root{
+    --black: #1a1a1d;
+    --cinza: #4e4e50;
+    --vermelho-escuro: #6f2232;
+    --vermelho-vinho: #950740;
+    --vermelho-neon: #c3073f;
+    --algumas-Letras: rgb(211, 201, 201);
+}
+
+    main{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .iframe{
+        padding-top: 8vh;
+        width: 100%;
+        height: 40vh;
+        background-color: var(--black);
+    }
+    
+    .retangulo{
+        height: 8vh;
+        width: 100%;
+        background-color: var(--black);
+    }
+    
+    .principalSessao{
+        padding-top: 8vh;
+        height: 100%;
+    }
+    
+    .cardsDeJogos{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        gap: 1px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .cardsDeJogos .card{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        transition:  0.5s ease-out;
+    }
+
+    .cardsDeJogos .card:hover{
+        border-bottom: 10px solid transparent;
+        border-image: linear-gradient(to right, var(--vermelho-vinho), var(--vermelho-neon));
+        border-image-slice: 1;
+    }
+
+    .cardsDeJogos .item-1{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../imagens/HogwartsLegacy/hogwarst.jpg);
+        background-position: center;
+        background-size: cover;
+        color: var(--algumas-Letras);
+        font-family: 'K2D', sans-serif;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .item-2{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../imagens/AC15.jpg);
+        background-position: center;
+        background-size: cover;
+        color: var(--algumas-Letras);
+        font-family: 'K2D', sans-serif;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .item-3{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../imagens/GodOfWar/GodOfWar.jpg);
+        background-position: center;
+        background-size: cover;
+        color: var(--algumas-Letras);
+        font-family: 'K2D', sans-serif;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .item-4{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../imagens/Disney.jpg);
+        background-position: center;
+        background-size: cover;
+        color: var(--algumas-Letras);
+        font-family: 'K2D', sans-serif;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .item-5{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../imagens/Horizon/horizon.webp);
+        background-position: center;
+        background-size: cover;
+        color: var(--algumas-Letras);
+        font-family: 'K2D', sans-serif;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .NoticiaPrincipal{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .NoticiaPrincipal .imagemDaNoticiaPrincipal {
+        background-image: url(../../imagens/AssassinsCreed/red.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-color: var(--cinza);
+        height: 40vh;
+        width: 100%;
+        border: #950740 5px solid;
+    } 
+    .NoticiaPrincipal .textoDaNoticiaPrincipal {
+        background-color: var(--vermelho-vinho);
+        height: 40vh;
+        width: 100%;
+        font-family: 'Exo', sans-serif;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    
+    .NoticiaPrincipal .textoDaNoticiaPrincipal h3{
+        text-align: center;
+        color: #1a1a1d;
+        font-weight: 700;
+    }
+
+    .NoticiaPrincipal .textoDaNoticiaPrincipal p{
+        text-align: justify;
+        color: var(--algumas-Letras);
+        font-weight: bold;
+    }
+    
+    .ConteudoDeNoticias{
+        margin-top: 5%;
+        height: 100%;
+        display: grid; 
+        grid-template-columns: 2.5fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "NoticiasDeGames patrocinio"; 
+        margin-bottom: 30px;
+    }
+
+   
+
+@media (max-width: 999px) {
+    main{
+        margin: 0;
+    }
+
+    .principalSessao{
+        height: auto;
+    }
+
+    .cardsDeJogos{
+        margin: 0px;
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cardsDeJogos .card{
+        position: relative;
+        margin: 0;
+        height: 200px;
+        background-color: var(--cinza);
+        font-size: 12px;
+    }
+
+    .cardsDeJogos .card:nth-child(4){
+        display: none;
+        position: relative;
+        margin: 0;
+        height: 300px;
+        background-color: var(--cinza);
+    
+    }
+    .cardsDeJogos .card:nth-child(3){
+        display: none;
+        position: relative;
+        margin: 0;
+        height: 300px;
+        background-color: var(--cinza);   
+    }
+
+    .NoticiaPrincipal{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .NoticiaPrincipal .imagemDaNoticiaPrincipal {
+        position: relative;
+        height: 40vh;
+        width: 100%;
+    } 
+
+    .NoticiaPrincipal .textoDaNoticiaPrincipal {
+        display: block;
+        background-color: var(--vermelho-vinho);
+        height: 100%;
+        width: 100%;
+    }
+
+    .ConteudoDeNoticias{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+    .ConteudoDeNoticias .boxDeNoticia{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ConteudoDeNoticias .boxDeNoticia .boxDeNoticiaImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .linkCard {
+        width: 100%;
+        text-decoration: none;
+        color: var(--algumas-Letras);
+    }
+}

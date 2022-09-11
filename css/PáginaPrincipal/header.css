@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@600&display=swap');
+:root{
+    --black: #1a1a1d;
+    --cinza: #4e4e50;
+    --vermelho-escuro: #6f2232;
+    --vermelho-vinho: #950740;
+    --vermelho-neon: #c3073f;
+    --algumas-Letras: rgb(211, 201, 201);
+}
+
+.linkCard{
+    width: 100%;
+    text-decoration: none;
+    color: var(--algumas-Letras);
+}
+
+.logo{
+    color: var(--vermelho-vinho);
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: default;
+    cursor: pointer;
+}
+
+.navegacao{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'K2D', sans-serif;
+    background-color: var(--black);
+    height: 8vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.ListaNavegacao{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ListaNavegacao li{
+    color: rgb(211, 201, 201);
+    letter-spacing: 2px;
+    margin-left: 32px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'K2D', sans-serif;
+    position: relative;
+}
+
+.ListaNavegacao li::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(90deg, var(--vermelho-vinho), var(--vermelho-neon));
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.ListaNavegacao li:hover{
+    color: var(--vermelho-neon);
+    letter-spacing: 2px;
+    margin-left: 32px;
+    font-size: 20px;
+}
+
+.ListaNavegacao li:hover::after{
+    width: 30px;
+}
+
+.redes button{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-image: linear-gradient(45deg, var(--vermelho-vinho), var(--vermelho-escuro));
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.redes img{
+    margin-top: 3px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 3px;
+    background-color: var(--vermelho-neon);
+    margin: 8px;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .ListaNavegacao{
+        display: none;
+        background-color: var(--black);
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 80vw;
+        height: 90vh;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        color: #950740;
+    }
+
+    .ListaNavegacao li{
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    .mobile-menu{
+        display: block;
+        font-size: 32px;
+    }
+
+    .dois {
+        display: block;
+        transition: 0.2s;
+        transform: translateX(0);
+        padding: 0;
+        font-size: 32px;
+    }
+
+    .dois li{
+        position: relative;
+        color: #950740;
+        top: 8vh;
+        text-align: center;
+        margin-bottom: 10vh;
+        font-size: 32px;
+    }
+
+}
+
+

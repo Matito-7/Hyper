@@ -1,0 +1,44 @@
+main{
+    position: relative;
+    height: 100%;
+}
+
+.NoticiasDeGames{
+    height: 100%;
+    word-spacing: 5px;
+}
+
+.QuadradosDosConteudos{
+    font-family: 'Exo';
+    text-align: justify;
+    font-size: larger;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+
+.QuadradosDosConteudos img{
+    width: 100%;
+}
+
+.principal .titulo h1{
+    font-family: 'Exo';
+    font-size: 40px;
+    word-spacing: 10px;
+    padding-bottom: 10px;
+}
+
+.QuadradosDosConteudos h2{
+    margin: 20px 0;
+}
+
+.QuadradosDosConteudos p{
+    line-height: 1.8rem;
+}
+
+@media (max-width:999px) {
+    .banner-Hogwarts{
+        height: 50vh;
+        width: 100%;
+    }
+    
+}

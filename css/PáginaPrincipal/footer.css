@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@600&display=swap');
+:root{
+    --black: #1a1a1d;
+    --cinza: #4e4e50;
+    --vermelho-escuro: #6f2232;
+    --vermelho-vinho: #950740;
+    --vermelho-neon: #c3073f;
+    --algumas-Letras: rgb(211, 201, 201);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+footer{
+    position: relative;
+    background-color: var(--black);
+    height: auto;
+    width: 100%;
+    font-family: 'K2D', sans-serif;
+    padding-top: 40px;
+    color: var(--algumas-Letras); 
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: var(--vermelho-neon);
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--algumas-Letras);
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.footer-bottom spam{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 400;
+}
